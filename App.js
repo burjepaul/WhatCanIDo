@@ -25,8 +25,7 @@ const headerProps = {
 export default function App() {
   return (
       <NavigationContainer>
-        <StatusBar backgroundColor="#003E19" color='red'/>
-        <HomeScreen/>
+        <StatusBar backgroundColor="#003E19"/> 
         {/* <MapScreen/> */}
           <Stack.Navigator>
             <Stack.Screen name="BottomTab" component={BottomTab} options={{ headerShown: false }}/>
