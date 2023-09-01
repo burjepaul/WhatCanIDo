@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Hanul Cetatii",
+        "coordinates":{
+            "latitude":46.19533442,
+            "longitude":24.960897
+        },
+        "region": "Saschiz",
+        "regionCoordinates":{
+            "latitude":46.1893102,
+            "longitude":24.9600781
+        },
+        "services": ["Hotel", "Restaurant", "Pub"]
+    },
+    {
+        "id": 2,
+        "title": "Pensiunea Casa Saseasca",
+        "coordinates":{
+            "latitude":46.1875454,
+            "longitude":24.9640519
+        },
+        "region": "Saschiz",
+        "regionCoordinates":{
+            "latitude":46.1893102,
+            "longitude":24.9600781
+        },
+        "services": ["Hotel"]
+    },
+    {
+        "id": 3,
+        "title": "Saschiz Fortified Church",
+        "coordinates":{
+            "latitude":46.194152,
+            "longitude":24.960283
+        },
+        "region": "Saschiz",
+        "regionCoordinates":{
+            "latitude":46.1893102,
+            "longitude":24.9600781
+        },
+        "services": ["Visit"]
+    }
+]
