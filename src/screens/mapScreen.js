@@ -4,11 +4,38 @@ import MapView from 'react-native-maps'
 import { Marker } from 'react-native-maps';
 import data from '../../assets/data.json';
 import * as Location from 'expo-location';
+import { extractAllServices } from "../helpers";
+import { colors } from "../config";
+import OptionComponent from "../components/OptionComponent";
+
+const options = [
+  {
+    id:"1",
+    text: "Sleeping"
+  },
+  {
+    id:"2",
+    text: "Eating"
+  },
+  {
+    id:"3",
+    text: "Drinking"
+  },
+  {
+    id:"4",
+    text: "Visiting"
+  },
+]
 
 const MapScreen = () => {
     const [location, setLocation] = useState()
     const [mapSize, setMapSize] = useState(0.01)
-  
+    const [optionsToShow, setOptionsToShow] = useState([])
+
+    const setData = (data) => {
+      setOptionsToShow(data)
+    }
+
     useEffect(() => {
       const getPermissions = async () => {
         let {status} = await Location.requestForegroundPermissionsAsync()
@@ -23,10 +50,16 @@ const MapScreen = () => {
   
       getPermissions()
     },[])
-  
-    console.log(mapSize)
+
+    const services = extractAllServices(data)
+
     return(
-      <MapView 
+    <View>
+      <Text style={styles.question}>What are you looking for?</Text>
+      <View style={styles.optionsContainer}>
+        {options.map((option) => <OptionComponent key={option.id} text={option.text} options={optionsToShow} setOptions={setData}/>)}
+      </View>
+      {/* <MapView 
         style={styles.map}
         onRegionChange={(region) => {setMapSize(region.latitudeDelta)}}
         region={{
@@ -61,14 +94,29 @@ const MapScreen = () => {
               )
             })
           }
-      </MapView>        
+      </MapView>         */}
+    </View>
     )
 }
 
 const styles = StyleSheet.create({
+  question:{
+    backgroundColor:colors.backgroundColor,
+    paddingVertical:"2%",
+    paddingLeft:"5%",
+    color: colors.textColor,
+    fontSize:18,
+    fontWeight:"bold",
+    textShadowColor: 'rgba(0, 0, 0, 1)',
+    textShadowOffset: {width: 0, height: 0},
+    textShadowRadius: 10
+  },
   map:{
     width:"100%",
-    height:"80%"
+    height:"100%"
+  },
+  optionsContainer:{
+    backgroundColor:colors.backgroundColor
   }
 })
 
