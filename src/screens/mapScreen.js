@@ -2,30 +2,14 @@ import React, {useState, useEffect} from "react";
 import { View, Text, StyleSheet } from "react-native";
 import MapView from 'react-native-maps'
 import { Marker } from 'react-native-maps';
-import data from '../../assets/data.json';
-import * as Location from 'expo-location';
-import { extractAllServices } from "../helpers";
-import { colors } from "../config";
+
 import OptionComponent from "../components/OptionComponent";
 
-const options = [
-  {
-    id:"1",
-    text: "Sleeping"
-  },
-  {
-    id:"2",
-    text: "Eating"
-  },
-  {
-    id:"3",
-    text: "Drinking"
-  },
-  {
-    id:"4",
-    text: "Visiting"
-  },
-]
+import { extractAllServices, filterDataByOptions, transformServicesForIconName } from "../helpers";
+import { colors } from "../config";
+import data from '../../assets/data.json';
+import * as Location from 'expo-location';
+import icons from "../icons";
 
 const MapScreen = () => {
     const [location, setLocation] = useState()
@@ -52,34 +36,41 @@ const MapScreen = () => {
     },[])
 
     const services = extractAllServices(data)
+    const filteredData = filterDataByOptions(data, optionsToShow)
+    const markeImageText = services.join('-')
 
     return(
-    <View>
+    <View style={styles.container}>
       <Text style={styles.question}>What are you looking for?</Text>
       <View style={styles.optionsContainer}>
-        {options.map((option) => <OptionComponent key={option.id} text={option.text} options={optionsToShow} setOptions={setData}/>)}
+        {services.slice(0,2).map((service, index) => <OptionComponent key={index} text={service} options={optionsToShow} setOptions={setData}/>)}
       </View>
-      {/* <MapView 
+      <View style={styles.optionsContainer}>
+        {services.slice(2,4).map((service, index) => <OptionComponent key={index} text={service} options={optionsToShow} setOptions={setData}/>)}
+      </View>
+      <MapView 
         style={styles.map}
         onRegionChange={(region) => {setMapSize(region.latitudeDelta)}}
         region={{
-          latitude: 46.1928621,
+          latitude: 46.1889621,
           longitude: 24.9617289,
-          latitudeDelta: 0.01,
-          longitudeDelta: 0.01,
+          latitudeDelta: 0.015,
+          longitudeDelta: 0.015,
         }}
         mapType='satellite'
         // showsUserLocation
         >  
       {
         mapSize < 0.1 ? 
-        data.map((entry) => {
+        filteredData.map((entry) => {
+          const text = transformServicesForIconName(entry.services) 
           return(
             <Marker
             key={entry.id}
             coordinate={entry.coordinates}
             title={entry.title}
             description={entry.services[0]}
+            image={icons[text]}
             />
             )
           })
@@ -94,15 +85,19 @@ const MapScreen = () => {
               )
             })
           }
-      </MapView>         */}
+      </MapView>        
     </View>
     )
 }
 
 const styles = StyleSheet.create({
+  container:{
+    backgroundColor:colors.backgroundColor
+  },
   question:{
     backgroundColor:colors.backgroundColor,
-    paddingVertical:"2%",
+    marginTop:"4%",
+    paddingVertical:"3%",
     paddingLeft:"5%",
     color: colors.textColor,
     fontSize:18,
@@ -116,7 +111,10 @@ const styles = StyleSheet.create({
     height:"100%"
   },
   optionsContainer:{
-    backgroundColor:colors.backgroundColor
+    backgroundColor:colors.backgroundColor,
+    flexDirection:"row",
+    paddingBottom:"1%",
+    alignSelf:"center"
   }
 })
 

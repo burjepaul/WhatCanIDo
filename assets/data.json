@@ -11,7 +11,7 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Hotel", "Restaurant", "Pub"]
+        "services": ["Sleeping", "Eating", "Drinking"]
     },
     {
         "id": 2,
@@ -25,7 +25,7 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Hotel"]
+        "services": ["Sleeping"]
     },
     {
         "id": 3,
@@ -39,6 +39,6 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Visit"]
+        "services": ["Visiting"]
     }
 ]

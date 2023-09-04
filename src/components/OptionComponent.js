@@ -2,6 +2,7 @@ import react, { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { colors } from "../config";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons'; 
 
 const OptionComponent = ({text,options, setOptions}) => {
     const [selected, setSelected] = useState(false)
@@ -12,8 +13,24 @@ const OptionComponent = ({text,options, setOptions}) => {
         setSelected(!selected)
     }
 
+    const iconToShow = () => {
+        switch(text){
+            case "Sleeping":
+                return <FontAwesome name="bed" size={20} style={styles.icons} color="black" />
+            case "Eating":
+                return <FontAwesome5 name="utensils" size={20} style={styles.icons} color="black" />
+            case "Drinking":
+                return <FontAwesome5 name="beer" size={20} style={styles.icons} color="black" />
+            case "Visiting":
+                return <FontAwesome5 name="walking" size={20} style={styles.icons} color="black" />
+            default:
+                null
+                }
+    }
+
     return(
         <TouchableOpacity style={selected ? styles.containerSelected: styles.containerUnelected} onPress={handleOptionsToShow}>
+            {iconToShow()}
             <Text style={styles.text}>
                 {text}
             </Text>
@@ -23,29 +40,36 @@ const OptionComponent = ({text,options, setOptions}) => {
 
 const styles = StyleSheet.create({
 containerSelected:{
-    backgroundColor:colors.backgroundColor,
-    paddingVertical:"1%",
-    marginHorizontal:"10%",
-    marginVertical:"1%",
+    backgroundColor:colors.semibackgroundColor,
+    paddingVertical:"0.5%",
+    marginHorizontal:"2%",
+    marginVertical:"0.5%",
     paddingLeft:"5%",
     borderWidth:0.5,
     borderRadius:20,
     elevation: 10,
+    flexDirection:"row",
+    width:160,
     shadowColor: colors.lightColor,
 },
 containerUnelected:{
     backgroundColor:colors.backgroundColor,
-    paddingVertical:"1%",
-    marginHorizontal:"10%",
-    marginVertical:"1%",
+    paddingVertical:"0.5%",
+    marginHorizontal:"2%",
+    marginVertical:"0.5%",
     paddingLeft:"5%",
     borderWidth:0.5,
     borderRadius:20,
     elevation: 10,
+    flexDirection:"row",
+    width:160
 },
 text:{
     color:colors.textColor,
-
+    fontSize:14,
+},
+icons:{
+    width:"25%"
 }
 })
 

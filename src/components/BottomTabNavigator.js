@@ -27,10 +27,7 @@ const BottomTab = () => {
       />
       <Tab.Screen name="Map" component={MapScreen} 
         options={{
-          headerTintColor: '#003E19',
-          headerStyle:{
-           backgroundColor:'#003E19'
-          },
+          headerShown: false, 
           tabBarLabel: 'Maps',
           tabBarIcon: ({ color, size }) => (
             <FontAwesome5 name="map-marked-alt" color={color} size={size}/>
