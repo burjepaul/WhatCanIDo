@@ -11,6 +11,7 @@ import data from '../../assets/data.json';
 import * as Location from 'expo-location';
 import icons from "../icons";
 import photo from '../../assets/icon.png'
+import WebView from "react-native-webview";
 
 const MapScreen = () => {
     const [location, setLocation] = useState()
@@ -81,20 +82,19 @@ const MapScreen = () => {
                     <Text style={styles.calloutText}>{entry.description}</Text>
                   </View>
 
-                <View>
+                  <View>
+                    <WebView style={{ height: 90 , width: 120}} source={{ uri:entry.photoUri }}/>
+                    {/* <Text style={{ height: 110, position: "relative", bottom: 37 }}>
+                        <Image
+                          source={{uri:entry.photoUri}}    
+                          style={styles.image}       
+                          
+                          />
+                          </Text> */}
+                  </View>
 
-<Text style={{ height: 200, position: "relative", bottom: 35 }}>
-
-                      <Image
-                        source={{uri:entry.photoUri}}    
-                        style={styles.image}       
-                        
-                        />
-                        </Text>
-                        </View>
-                  <View style={styles.arrowBorder}/>
-                  <View style={styles.arrow}/>
-                  <View/>
+                </View>
+                <View style={styles.arrow}>
 
                 </View>
               </Callout>
@@ -156,7 +156,9 @@ const styles = StyleSheet.create({
     padding:5,
     borderRadius:5,
     alignSelf:"center",
-    flexDirection:"row"
+    flexDirection:"row",
+    borderWidth:2,
+    borderColor:colors.semibackgroundColor
   },
   calloutTitle:{
     color:colors.textColor,
@@ -170,24 +172,18 @@ const styles = StyleSheet.create({
   },
   image:{
     width:120,
-    height:80
+    height:80,
   },
   arrow:{
-    backgroundColor:'transparent',
-    borderColor:'transparent',
-    borderTopColor:'#fff',
-    borderWidth: 16,
+    width:44,
+    height:44,
+    backgroundColor:colors.backgroundColor,
     alignSelf:"center",
-    marginTop:-32
-  },
-  arrowBorder:{
-    backgroundColor:'transparent',
-    borderColor:'transparent',
-    borderTopColor:'#fff',
-    borderWidth: 16,
-    alignSelf:"center",
-    marginTop:-0.5,
-    marginBottom:-15
+    transform: [{rotateY: '60deg'}, {rotateZ: '45deg'}],
+    bottom:22,
+    zIndex:-1,
+    borderWidth:2,
+    borderColor:colors.semibackgroundColor
   }
 })
 
