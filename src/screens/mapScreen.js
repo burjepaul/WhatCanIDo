@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import { View, Text, StyleSheet } from "react-native";
-import MapView from 'react-native-maps'
+import { View, Text, StyleSheet, Dimensions, Image } from "react-native";
+import MapView, { Callout } from 'react-native-maps'
 import { Marker } from 'react-native-maps';
 
 import OptionComponent from "../components/OptionComponent";
@@ -10,6 +10,7 @@ import { colors } from "../config";
 import data from '../../assets/data.json';
 import * as Location from 'expo-location';
 import icons from "../icons";
+import photo from '../../assets/icon.png'
 
 const MapScreen = () => {
     const [location, setLocation] = useState()
@@ -37,7 +38,6 @@ const MapScreen = () => {
 
     const services = extractAllServices(data)
     const filteredData = filterDataByOptions(data, optionsToShow)
-    const markeImageText = services.join('-')
 
     return(
     <View style={styles.container}>
@@ -69,9 +69,36 @@ const MapScreen = () => {
             key={entry.id}
             coordinate={entry.coordinates}
             title={entry.title}
-            description={entry.services[0]}
+            description={entry.description}
             image={icons[text]}
-            />
+            color={"black"}
+            >
+              <Callout tooltip>
+                <View style={styles.callout}>
+
+                  <View style={styles.textCalloutContainer}>
+                    <Text style={styles.calloutTitle}>{entry.title}</Text>
+                    <Text style={styles.calloutText}>{entry.description}</Text>
+                  </View>
+
+                <View>
+
+<Text style={{ height: 200, position: "relative", bottom: 35 }}>
+
+                      <Image
+                        source={{uri:entry.photoUri}}    
+                        style={styles.image}       
+                        
+                        />
+                        </Text>
+                        </View>
+                  <View style={styles.arrowBorder}/>
+                  <View style={styles.arrow}/>
+                  <View/>
+
+                </View>
+              </Callout>
+            </Marker>
             )
           })
           :
@@ -92,7 +119,7 @@ const MapScreen = () => {
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor:colors.backgroundColor
+    backgroundColor:colors.backgroundColor,
   },
   question:{
     backgroundColor:colors.backgroundColor,
@@ -115,6 +142,52 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     paddingBottom:"1%",
     alignSelf:"center"
+  },
+  textCalloutContainer:{
+    width:"50%"
+  },
+  imageContainer:{
+    width:"50%",
+    backgroundColor:"red"
+  },
+  callout:{
+    backgroundColor:colors.backgroundColor,
+    width:250,
+    padding:5,
+    borderRadius:5,
+    alignSelf:"center",
+    flexDirection:"row"
+  },
+  calloutTitle:{
+    color:colors.textColor,
+    fontSize:13,
+    textAlign:"center",
+    paddingVertical:5
+  },
+  calloutText:{
+    color:colors.textColor,
+    fontSize:10,
+  },
+  image:{
+    width:120,
+    height:80
+  },
+  arrow:{
+    backgroundColor:'transparent',
+    borderColor:'transparent',
+    borderTopColor:'#fff',
+    borderWidth: 16,
+    alignSelf:"center",
+    marginTop:-32
+  },
+  arrowBorder:{
+    backgroundColor:'transparent',
+    borderColor:'transparent',
+    borderTopColor:'#fff',
+    borderWidth: 16,
+    alignSelf:"center",
+    marginTop:-0.5,
+    marginBottom:-15
   }
 })
 

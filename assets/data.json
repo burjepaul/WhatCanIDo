@@ -6,6 +6,8 @@
             "latitude":46.19533442,
             "longitude":24.960897
         },
+        "description":"Guesthouse with Restaurant and Pub where you can eat or have a drink.",
+        "photoUri":"https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/e5/b5/b5/hanul-cetatii.jpg?w=600&h=-1&s=1",
         "region": "Saschiz",
         "regionCoordinates":{
             "latitude":46.1893102,
@@ -20,6 +22,8 @@
             "latitude":46.1875454,
             "longitude":24.9640519
         },
+        "photoUri":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/227378294.jpg?k=e63c6604f0ad45a61ded1930622a20d5f782829c655bbe25cebd40d9b9a2652f&o=&hp=1",
+        "description":"Guesthouse for sleeping.",
         "region": "Saschiz",
         "regionCoordinates":{
             "latitude":46.1893102,
@@ -34,11 +38,45 @@
             "latitude":46.194152,
             "longitude":24.960283
         },
+        "photoUri":"https://elanomad.ro/wp-content/uploads/2023/06/saschiz-elanomad.jpg",
+        "description":"Lutheran fortified church part of the UNESCO World Heritage Site.",
         "region": "Saschiz",
         "regionCoordinates":{
             "latitude":46.1893102,
             "longitude":24.9600781
         },
         "services": ["Visiting"]
+    },
+    {
+        "id": 4,
+        "title": "Saschiz Citadel",
+        "coordinates":{
+            "latitude":46.196552,
+            "longitude":24.951883
+        },
+        "photoUri":"https://turism.saschiz.ro/img/cetate-saschiz.jpg",
+        "description":"On the hill above Saschiz is the Peasant Citadel.",
+        "region": "Saschiz",
+        "regionCoordinates":{
+            "latitude":46.1893102,
+            "longitude":24.9600781
+        },
+        "services": ["Visiting"]
+    },
+    {
+        "id": 5,
+        "title": "Camping Brazi",
+        "coordinates":{
+            "latitude":46.190552,
+            "longitude":24.963283
+        },
+        "photoUri":"https://lh5.googleusercontent.com/p/AF1QipM0Mnenk3M7qM7SOIvw8MBhONKqPaqiup-utX7n=w426-h240-k-no",
+        "description":"Former football field which is used now as a camping place.",
+        "region": "Saschiz",
+        "regionCoordinates":{
+            "latitude":46.1893102,
+            "longitude":24.9600781
+        },
+        "services": ["Sleeping"]
     }
 ]
