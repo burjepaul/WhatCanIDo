@@ -1,12 +1,15 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, FlatList, Image } from "react-native";
 
 import { AntDesign } from '@expo/vector-icons'; 
 import { colors } from "../config";
 
 const ObjectiveComponent = ({setIndex, hideObjective, objectivesData}) => {
-    console.log(setIndex)
     if(setIndex){
+        const keys = Object.keys(objectivesData.details.photos)
+        const values = Object.values(objectivesData.details.photos)
+        console.log(objectivesData.details.photos["Interior"])
+        console.log(keys)
         return(
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
@@ -15,6 +18,19 @@ const ObjectiveComponent = ({setIndex, hideObjective, objectivesData}) => {
                 </View>
                 <Text style={styles.title}>{objectivesData.title}</Text>
                 <Text style={styles.description}><Text>{'      '}</Text>{objectivesData.details.longDescription}</Text>
+                <FlatList
+                    data={keys}
+                    renderItem={({item}) => 
+                    <View>
+                        <Text style={styles.subtitle}>{item}</Text>
+                        <FlatList
+                            data={objectivesData.details.photos[item]}
+                            renderItem={({item}) => <Image source={{uri:item}} style={styles.image}/>}
+                            horizontal
+                        />
+                    </View>
+                    }
+                />
                 <Text style={styles.credentials}>Address: {objectivesData.details.address}</Text>
                 <Text style={styles.credentials}>Phone number:  {objectivesData.details.phone}</Text>
             </View>
@@ -25,7 +41,7 @@ const ObjectiveComponent = ({setIndex, hideObjective, objectivesData}) => {
 const styles = StyleSheet.create({
     container:{
         backgroundColor:colors.backgroundColor,
-        opacity:0.9,
+        opacity:0.91,
         height:"100%",
         width:"100%",
         position:"absolute",
@@ -43,6 +59,12 @@ const styles = StyleSheet.create({
         fontSize:22,
         fontWeight:"500"
     },
+    subtitle:{
+        color:colors.textColor,
+        fontSize:20,
+        fontWeight:"300",
+        marginLeft:10
+    },
     description:{
         color:colors.textColor,
         padding:15,
@@ -52,6 +74,13 @@ const styles = StyleSheet.create({
         color:colors.textColor,
         paddingHorizontal:5,
         fontSize:11  
+    },
+    image:{
+        height:150,
+        width:110,
+        marginHorizontal:7,
+        resizeMode:"cover",
+        borderRadius:5,
     }
 })
 
