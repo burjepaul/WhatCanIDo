@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { View, Text, StyleSheet, Dimensions, Image } from "react-native";
 import MapView, { Callout } from 'react-native-maps'
 import { Marker } from 'react-native-maps';
+import WebView from "react-native-webview";
 
 import OptionComponent from "../components/OptionComponent";
 
@@ -10,16 +11,21 @@ import { colors } from "../config";
 import data from '../../assets/data.json';
 import * as Location from 'expo-location';
 import icons from "../icons";
-import photo from '../../assets/icon.png'
-import WebView from "react-native-webview";
+import ObjectiveComponent from "../components/ObjectiveComponent";
 
 const MapScreen = () => {
     const [location, setLocation] = useState()
     const [mapSize, setMapSize] = useState(0.01)
     const [optionsToShow, setOptionsToShow] = useState([])
+    const [showObjective, setShowObjective] = useState(false)
+    const [detailObjective, setDetailObjective] = useState()
 
     const setData = (data) => {
       setOptionsToShow(data)
+    }
+
+    const hideObjective = () => {
+      setShowObjective(false)
     }
 
     useEffect(() => {
@@ -37,11 +43,19 @@ const MapScreen = () => {
       getPermissions()
     },[])
 
+    const handleCalloutPress = (entry) => {
+      setShowObjective(true)
+      setDetailObjective(entry)
+    }
+
     const services = extractAllServices(data)
     const filteredData = filterDataByOptions(data, optionsToShow)
 
     return(
     <View style={styles.container}>
+
+      <ObjectiveComponent setIndex={showObjective} hideObjective={hideObjective} objectivesData={detailObjective}/>
+
       <Text style={styles.question}>What are you looking for?</Text>
       <View style={styles.optionsContainer}>
         {services.slice(0,2).map((service, index) => <OptionComponent key={index} text={service} options={optionsToShow} setOptions={setData}/>)}
@@ -74,7 +88,7 @@ const MapScreen = () => {
             image={icons[text]}
             color={"black"}
             >
-              <Callout tooltip>
+              <Callout tooltip onPress={() => handleCalloutPress(entry)}>
                 <View style={styles.callout}>
 
                   <View style={styles.textCalloutContainer}>
@@ -83,20 +97,11 @@ const MapScreen = () => {
                   </View>
 
                   <View>
-                    <WebView style={{ height: 90 , width: 120}} source={{ uri:entry.photoUri }}/>
-                    {/* <Text style={{ height: 110, position: "relative", bottom: 37 }}>
-                        <Image
-                          source={{uri:entry.photoUri}}    
-                          style={styles.image}       
-                          
-                          />
-                          </Text> */}
+                    <WebView style={{ height: 80 , width: 120}} source={{ uri:entry.photoUri }}/>
                   </View>
 
                 </View>
-                <View style={styles.arrow}>
-
-                </View>
+                <View style={styles.arrow}/>
               </Callout>
             </Marker>
             )
@@ -158,7 +163,8 @@ const styles = StyleSheet.create({
     alignSelf:"center",
     flexDirection:"row",
     borderWidth:2,
-    borderColor:colors.semibackgroundColor
+    borderColor:colors.semibackgroundColor,
+    top:20
   },
   calloutTitle:{
     color:colors.textColor,
@@ -183,7 +189,8 @@ const styles = StyleSheet.create({
     bottom:22,
     zIndex:-1,
     borderWidth:2,
-    borderColor:colors.semibackgroundColor
+    borderColor:colors.semibackgroundColor,
+    top:-8
   }
 })
 

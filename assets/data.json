@@ -13,7 +13,12 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Sleeping", "Eating", "Drinking"]
+        "services": ["Sleeping", "Eating", "Drinking"],
+        "details":{
+            "longDescription":"In a picturesque Transylvanian village, a delightful pension awaits travelers. Its accompanying restaurant and pub offer a taste of local cuisine amid the charm of this historic setting.",
+            "address":"Principala Street 157, Saschiz 547510 Romania",
+            "phone":"+40 751 957 107"
+        }
     },
     {
         "id": 2,
@@ -29,7 +34,12 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Sleeping"]
+        "services": ["Sleeping"],
+        "details":{
+            "longDescription":"Saschiz Evangelical Church was built between 1493 and 1496 by Saxon colonists. Its sheer size and the way the fortifying elements have been adapted to the shape of a church building are unique in Transylvania. From the outside, the church appears to be a bulwark, but its defensive features are surpassed by the beauty of its gothic elements: huge arches, massive buttresses and decorative stone and brick aspects. Saschiz fortified church was, for centuries, the local's main refuge, invading raids.",
+            "address":"DN13, Saschiz 547510",
+            "phone":"0265 711 755"
+        }
     },
     {
         "id": 3,
@@ -38,14 +48,19 @@
             "latitude":46.194152,
             "longitude":24.960283
         },
-        "photoUri":"https://elanomad.ro/wp-content/uploads/2023/06/saschiz-elanomad.jpg",
+        "photoUri":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYslzjFBE18Ao3abgvZXcAZXoJH__0hqofQ&usqp=CAU",
         "description":"Lutheran fortified church part of the UNESCO World Heritage Site.",
         "region": "Saschiz",
         "regionCoordinates":{
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Visiting"]
+        "services": ["Visiting"],
+        "details":{
+            "longDescription":"Saschiz Evangelical Church was built between 1493 and 1496 by Saxon colonists. Its sheer size and the way the fortifying elements have been adapted to the shape of a church building are unique in Transylvania. From the outside, the church appears to be a bulwark, but its defensive features are surpassed by the beauty of its gothic elements: huge arches, massive buttresses and decorative stone and brick aspects. Saschiz fortified church was, for centuries, the local's main refuge, invading raids.",
+            "address":"DN13, Saschiz 547510",
+            "phone":"0265 711 755"
+        }
     },
     {
         "id": 4,
@@ -61,7 +76,12 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Visiting"]
+        "services": ["Visiting"],
+        "details":{
+            "longDescription":"Saschiz Evangelical Church was built between 1493 and 1496 by Saxon colonists. Its sheer size and the way the fortifying elements have been adapted to the shape of a church building are unique in Transylvania. From the outside, the church appears to be a bulwark, but its defensive features are surpassed by the beauty of its gothic elements: huge arches, massive buttresses and decorative stone and brick aspects. Saschiz fortified church was, for centuries, the local's main refuge, invading raids.",
+            "address":"DN13, Saschiz 547510",
+            "phone":"0265 711 755"
+        }
     },
     {
         "id": 5,
@@ -77,6 +97,11 @@
             "latitude":46.1893102,
             "longitude":24.9600781
         },
-        "services": ["Sleeping"]
+        "services": ["Sleeping"],
+        "details":{
+            "longDescription":"Saschiz Evangelical Church was built between 1493 and 1496 by Saxon colonists. Its sheer size and the way the fortifying elements have been adapted to the shape of a church building are unique in Transylvania. From the outside, the church appears to be a bulwark, but its defensive features are surpassed by the beauty of its gothic elements: huge arches, massive buttresses and decorative stone and brick aspects. Saschiz fortified church was, for centuries, the local's main refuge, invading raids.",
+            "address":"DN13, Saschiz 547510",
+            "phone":"0265 711 755"
+        }
     }
 ]
