@@ -47,9 +47,9 @@ containerSelected:{
     paddingLeft:"5%",
     borderWidth:0.5,
     borderRadius:20,
-    elevation: 10,
     flexDirection:"row",
     width:160,
+    elevation: 10,
     shadowColor: colors.lightColor,
 },
 containerUnelected:{
