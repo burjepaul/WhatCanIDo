@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
   },
   question:{
     backgroundColor:colors.backgroundColor,
-    marginTop:"6%",
+    marginTop:"7%",
     paddingVertical:"4%",
     paddingLeft:"5%",
     color: colors.textColor,

@@ -20,8 +20,10 @@
                 "Interior" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/29006_607290432631589_653143867_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=qwev8zTwvxwAX-659Tk&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBt-DmYNFvATJEsYHhtqnN1H4chUjJmBKYFD_VLm6mhCw&oe=65216CCA","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/577940_607290399298259_45078980_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=8ZfZ8_7IyKkAX9TDVfJ&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfD1gftziulf-SzCFCWvfFYOX5qfjzFgh79lBawep1Tx1A&oe=6521A09B","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/64208_607290392631593_1954034259_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=H0uKR-NT8eAAX-I3KgC&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBCrxo-aNJGXfNyC_I3ub0M49WEaseD-01ZgL9jc9hF_A&oe=65219630","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/487671_607290375964928_2026282802_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=GJ4040yHT5sAX9Tg-RJ&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAWU_yAPkgtDIJMfRQcbdinwmBN89Uq3CV_OAIgnn0L1g&oe=652185D2"],
                 "Exterior" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.6435-9/95814673_2939210892834202_8235845827281551360_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AxsKVhnSeLQAX8j8kUG&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCDMywGKvU76W1xD8HffMJ7CFq6pCX5dX0dv1ZzanjPsA&oe=65218DC3","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/60474_607290135964952_566227017_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=Qe7IV4rn7wAAX9tUaz7&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDVetQhGGm_SZL14a3Va_DqhUNkmXumLj2_ImoPE9dH8w&oe=65218D06","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/481327_607290675964898_1877414318_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=ygJDgLs6AWgAX9KPAv5&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCoHs982VyZO2w-uVMSEJt5iulq8-K3yR9P1z1LmQbrXQ&oe=6521979D","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/526736_607290569298242_1224516673_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=pq4_i5ULgq4AX9fuqk4&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDJrnRsNY1qzVtZaidBlXJIWsfdb_Aj7HPRxNGH9ZNEjA&oe=6521870B"]
             },
-            "address":"Principala Street 157, Saschiz",
-            "phone":"+40 751 957 107",
+            "contact":{
+                "address":"Principala Street 157, Saschiz",
+                "phone":"+40 751 957 107"
+            },
             "socialMedia":{
                 "Instagram":"https://www.instagram.com/hanul_cetatii/",
                 "Facebook":"https://www.facebook.com/hanulcetatii",
@@ -45,14 +47,17 @@
         },
         "services": ["Sleeping"],
         "details":{
-            "longDescription":"Agrotouristic Guesthouse perfect for weekends or holidays.",
+            "longDescription":"Pensiunea agroturistică Casa Săsească este destinația perfectă pentru weekend-uri și vacanțe relaxante; situată în localitatea Saschiz, la numărul 407, pe DN13-E60, județul Mureș.Pensiunea oferă trei camere confortabile, decorate cu stil și bun gust, pentru cazarea turiștilor dintre care două cu pat matrimonial și o cameră cu pat dublu, aceasta din urmă, fiind păstrată și amenajată exact asa cum am moștenit-o de la străbunici în încercarea de a-i păstra frumusețea autentică săsească. Pensiunea Casa Săsească dispune de parcare proprie, în curtea pensiunii, de internet WiFi, de o sală multifuncțională în care se poate servi micul dejun, viziona un film, citi din mica noastră bibliotecă sau juca jocuri de societate precum rummy, table,șah, cărți sau tenis de masă. De asemenea pentru turiștii care preferă plimbările în aer liber, să cunoscă mai bine comuna și împrejurimile acesteia, dispunem de 3 biciclete, cu ajutorul cărora musafrii noștri sa petreacă momente frumoase și relaxante în natura.",
             "photos":{
                 "Interior" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t31.18172-8/13909089_1747285182197638_3634546108363251362_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=x5oP4ifv-I4AX916nV4&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAdB8TfalcLzv-imlS71BrPuKBhtu7TVkMl6ncnoV-_xA&oe=65217214","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.6435-9/62354472_2353862771539873_7207142323132563456_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=M65aH421exkAX8MwwmB&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDwEdoa8FcK99Mf16jjJfdvZwMnGKbQa4ncfPRVW888lw&oe=65217DBB","https://scontent.ftgm1-1.fna.fbcdn.net/v/t31.18172-8/13765953_1737181803207976_4071182431958839545_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=Vj-IlI-6v2AAX8IKGLd&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCp23CypLJcTeXJ2h1fPfL_vMQtu5tkZ_ea3MncJvWu7g&oe=652178DC","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/302243934_617842873380522_8670567106995421026_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=xHEGprzLMigAX9i5CgN&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDv40dHzxiKP_kuNtAnnFJ_ruG9jvYM9J9J6OgQ-GX_Cg&oe=64FFBCDA"],
                 "Exterior" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t31.18172-8/13679939_1744368052489351_1844191356765545949_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=zN9DzBdOj1IAX9PtS1c&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBFFEHPVNMLaa69RrLGjTO1_KK3DxKVlGt58k5R9TLuaQ&oe=652181A4","https://scontent.ftgm1-1.fna.fbcdn.net/v/t31.18172-8/13909127_1744368455822644_2337026317217487708_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=Mg9bCNCw8u8AX9UvPEK&_nc_oc=AQkFOXo4WyAd13FDKfZKsFNbI8ttvqHxKqn5r5lGmMO_q_YN3yySs_v6cWG4_pfhTXQLmB5NIvBnohMYlrxDkssl&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCLg4m3gxlgHNAwJliIIXoQGewWip__E4RPUWM8MMhFvg&oe=652194D3","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/20431519_1930180087241479_2907797271921999471_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=b2NDkdC4keEAX9Lyef7&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDeHeIZhcX5QlUHmKD3cS41P3qUwoz7AZeFEe-anbgLbQ&oe=6521790E","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.18169-9/13907183_1746404805619009_2926719862742857306_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=EWayE2Y9XaYAX_X5Srv&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfD2AimcbDhwoQuRIkTxHRWjYRilR6o64N2L-ghLOkMVzg&oe=6521901E"]
             },
-            "address":"Strada Principala 407, Saschiz",
-            "email":"pensiuneacasasaseasca@yahoo.com",
-            "phone":"0743 359 260",
+            "contact":{
+                "website":"https://pensiunea-casa-saseasca.business.site",
+                "email":"pensiuneacasasaseasca@yahoo.com",
+                "address":"Strada Principala 407, Saschiz",
+                "phone":"0743 359 260"
+            },
             "socialMedia":{
                 "Facebook":"https://www.facebook.com/PensiuneCasaSaseasca",
                 "Booking":"https://www.booking.com/hotel/ro/casa-saseasca-saschiz.ro.html",
@@ -81,8 +86,11 @@
                 "Interior" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/244550776_2414781531987641_7343859619356489876_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_ohc=THYvQJSYbNQAX-N5eCY&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfA9JtcoIwpsaHoCjOFLC1h-TBatA6R4eX80l-GJqIFagA&oe=64FD56B2","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/279521760_10159508002672771_4513464007928600439_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=49d041&_nc_ohc=lAp7HcZr7x0AX9OcjRM&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDuHSnhkE1N2oMWIvSbIikSXKyirO6pI-QibFuMQv9fTA&oe=64FDBAE0","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/367488300_2679880125495477_6884772912357197855_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_ohc=S3ceedu6STgAX83f9ZB&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAEF2fdMKd-W8tMNJs9fIEzulOQY_JqxpjjEeNvOauiqw&oe=64FD41B5","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/289652689_10159387359599930_965519467311125219_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=dtcGG2eOpN8AX8ja8W4&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAIfUs3hRJc6WlliecJ-NVIp2Kkyfxzy_ABKRpV31BZDA&oe=64FDD588","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/363069954_3573844589523368_1253408398987641516_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5614bc&_nc_ohc=KuUAgTZLSbEAX_azjcu&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBQk7UxU49b1Bx6SqrMMOKnRvQ2wwbfBwDw3JqBYrAHOg&oe=64FD8FED"],
                 "Exterior" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/352374134_638857854466501_8185690437346536549_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_ohc=pIsTz__06UsAX_B3P1x&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCgRIbB6MYEWQ3edtpVflQ9rv6GptqPPZ74p1tEa8tPfg&oe=64FCC8F4","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/296250402_5302765963145338_8479669692100307272_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_ohc=BH1cyJrCNV8AX8Fl7TR&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCrSs2aDifrJSVJvRts67hhJ9xC_UGHFM-olmpJh9sxNA&oe=64FCBB55","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/368897056_10227687298500321_2107649537973393013_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=BDFTWzRcx2YAX-V1gew&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAH88kwMlhDVHOsfsTay6_CMqUnpeMCK2OgcAetUY2JYg&oe=64FE7C07","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/278973684_10159508001892771_672723333066211164_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=C-QO-0CGXJEAX_9cXfa&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfCJbITO1MGzx1lhYhRIz1BNR4TtJ18rdl7JrWb8qBYMPw&oe=64FCBFD4"]
             },
-            "address":"DN13, Saschiz 547510",
-            "phone":"0265 711 755",
+            "contact":{
+                "website":"https://www.saschiz.ro",
+                "address":"DN13, Saschiz 547510",
+                "phone":"0265 711 755"
+            },
             "socialMedia":{
                 "Instagram":"https://www.instagram.com/comunasaschiz/",
                 "Facebook":"https://www.facebook.com/pages/Saschiz-fortified-church/313527028797302",
@@ -111,8 +119,11 @@
                 "View from Below" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t31.18172-8/28828501_1602465239849155_807661503596391704_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=NEKClNFRG1oAX_mDYtH&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBmvZf_yT9ADT7KjUAn8kCHEhs22Tmk3XzlflDclcYZeQ&oe=65219E09","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.6435-9/134722139_3505354152893578_7682227798354109546_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=crv1fwpX9UkAX_fo1KH&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAVycPuEslJ9Hx4ZWPP7YZwrUgQ32lGCy5puhqHyDO1-A&oe=652176A6","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/272826541_10159861609803739_9162654826292218033_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=813123&_nc_ohc=P94rYm7ekDQAX8NEsEF&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBkd7UxpQNSqOHTpOvMbeu4vEVt--xwjN7ynQ-5JX6ffw&oe=64FF998A","https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/300393829_396603082613329_1147377598524709884_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=ZpV6JOskr74AX_5oLh0&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfApdlc5mxcaX9sneDLOdaS1TOT1KoBxSRbvzk9GNv4jdw&oe=64FFBB40"],
                 "A Close Look" : ["https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.6435-9/121580544_2664551133856696_391434908473047417_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=urpkrvwIRsAAX9zSENv&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfDeLWM7J89jBd4_CTnTDGMeiAQ6hi9gUuYViOKgTxLlEQ&oe=65216F24","https://image.stirileprotv.ro/media/images/800x450/Feb2018/61938686.jpg","https://scontent.ftgm1-1.fna.fbcdn.net/v/t31.18172-8/25532044_1512492395513107_6952274117697400455_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=eSAjbXNvilwAX9Ndpsz&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfAUFAQF2r3dtw-Efkeu0BncM6ak24pRfHxtOs3v2p8Dtw&oe=6521A3D7","https://scontent.ftgm1-1.fna.fbcdn.net/v/t1.6435-9/73210207_2433842643378073_8109515171065495552_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=Ne0zIUAYXkMAX8dziFD&_nc_ht=scontent.ftgm1-1.fna&oh=00_AfBnM15U6AYdrbY1LmgNICT_ZBUT-A0cKrfHHMeTyEk6TQ&oe=65219F71"]
             },
-            "address":"Saschiz",
-            "phone":"0265 711 602",
+            "contact":{
+                "website":"https://www.saschiz.ro",
+                "address":"Saschiz",
+                "phone":"0265 711 602"
+            },
             "socialMedia":{
                 "Facebook":"https://www.facebook.com/cetateSaschiz",
                 "TripAdvisor":"https://www.tripadvisor.com/Attraction_Review-g2203968-d6976615-Reviews-Peasant_Citadel-Saschiz_Mures_County_Central_Romania_Transylvania.html"
@@ -139,8 +150,9 @@
             "photos":{
                 "Photo Gallery" :[] 
             },
-            "address":"Saschiz",
-            "phone":"",
+            "contact":{
+                "address":"Saschiz"
+            },
             "socialMedia":{
             }
         }
