@@ -12,6 +12,7 @@ import data from '../../assets/data.json';
 import * as Location from 'expo-location';
 import icons from "../icons";
 import ObjectiveComponent from "../components/ObjectiveComponent";
+import MapViewDirections from "react-native-maps-directions";
 
 const MapScreen = () => {
     const [location, setLocation] = useState()
@@ -51,6 +52,13 @@ const MapScreen = () => {
     const services = extractAllServices(data)
     const filteredData = filterDataByOptions(data, optionsToShow)
 
+    // const originLocation = {
+    //   latitude: location.coords.latitude,
+    //   longitude: location.coords.longitude
+    // }
+
+    // console.log(originLocation)
+
     return(
     <View style={styles.container}>
 
@@ -72,9 +80,21 @@ const MapScreen = () => {
           latitudeDelta: 0.015,
           longitudeDelta: 0.015,
         }}
-        mapType='satellite'
-        // showsUserLocation
-        >  
+        mapType="satellite"
+        showsUserLocation
+        > 
+        <MapViewDirections
+          origin={{
+            "latitude":46.1945,
+            "longitude":24.96107
+        }}
+          description={{
+            "latitude":46.2893102,
+            "longitude":24.9600781
+        }}
+          apikey={'...'}
+          strokeWidth={3}
+        /> 
       {
         mapSize < 0.1 ? 
         filteredData.map((entry) => {
